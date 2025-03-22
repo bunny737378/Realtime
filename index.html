@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Generator (Live Preview)</h1>
+        <p>Start typing and see the image generate in real time!</p>
+
+        <input type="text" id="promptInput" placeholder="Describe your image..." oninput="handleInput()" />
+
+        <div class="size-inputs">
+            <input type="number" id="widthInput" placeholder="Width (512)" min="100" max="1024" value="512">
+            <input type="number" id="heightInput" placeholder="Height (512)" min="100" max="1024" value="512">
+        </div>
+
+        <div id="imageContainer">
+            <p>Start typing to generate an image...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
